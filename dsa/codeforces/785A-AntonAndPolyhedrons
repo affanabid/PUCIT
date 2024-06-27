@@ -1,0 +1,21 @@
+n = int(input())
+collection = []
+for i in range(n):
+    shape = input()
+    collection.append(shape)
+total = 0
+for shape in collection:
+    if shape == 'Tetrahedron':
+        total += 4
+    elif shape == 'Cube':
+        total += 6
+    elif shape == 'Octahedron':
+        total += 8
+    elif shape == 'Dodecahedron':
+        total += 12
+    elif shape == 'Icosahedron':
+        total += 20
+
+print(total)
+
+
